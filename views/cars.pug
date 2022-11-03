@@ -8,6 +8,7 @@ block content
     each item in results
       div(class="col-sm-2") Car Company:#{item.Car_Company}, Car Model:#{item.Car_Model}, Car Cost:#{item.Car_Cost}
  br
+ h6='Bonus - Click on any item below to get the price:'
  div(class="container-fluid")
   each item,index  in results
    div(class="row", onclick=`buy(${index})`)
